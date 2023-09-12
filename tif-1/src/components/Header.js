@@ -95,7 +95,7 @@ function Header() {
             <img
               className="Rectangle400 w-96 h-96 rounded-bl-lg"
               src={pizzalogo}
-              alt="Pizza Image With 6 slices"
+              alt="Pizza With 6 slices"
               style={{ width: "550px", height: "619px" }}
             />
           </div>
@@ -115,7 +115,7 @@ function Header() {
           >
             <img
               src={vectorImage}
-              alt="Vector image in red curved color"
+              alt="Vector in red curved color"
               style={{ width: "660px", height: "680px" }}
             />
           </div>
