@@ -7,7 +7,10 @@ function Header() {
   return (
     <>
       {/* Food blogging website logo */}
-      <div className="header-class " style={{ width: "100%", height: "700px" }}>
+      <div
+        className="header-class sm:w-full md:w-1/2 lg:w-1/3 "
+        style={{ width: "100%", height: "700px" }}
+      >
         <div className="Header w-96 h-96 bg-white ">
           {/* Left hand side */}
           <div className="lhs">
@@ -30,7 +33,7 @@ function Header() {
               <span
                 style={{
                   color: "#0E2368",
-                  fontSize: "2rem",
+                  fontSize: "2.1rem",
                   fontWeight: "bold",
                   lineHeight: "3",
                 }}
@@ -40,7 +43,7 @@ function Header() {
               <span
                 style={{
                   color: "#0E2368",
-                  fontSize: "2rem",
+                  fontSize: "2.1rem",
                   fontWeight: "bold",
                   lineHeight: "0",
                 }}
@@ -50,7 +53,7 @@ function Header() {
               <span
                 style={{
                   color: "#0E2368",
-                  fontSize: "2rem",
+                  fontSize: "2.1rem",
                   fontWeight: "bold",
                   lineHeight: "2",
                 }}

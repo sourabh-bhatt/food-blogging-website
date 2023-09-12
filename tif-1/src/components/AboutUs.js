@@ -2,23 +2,28 @@ import React from "react";
 import PharmacistImage from "../Assets/pharmasict-serving-customer-drug-store 1.png";
 
 function AboutUs() {
+  const mobileBreakpoint = 640;
+  const isMobile = window.innerWidth < mobileBreakpoint;
+
   return (
-    <div className="AboutUs-Background w-97 h-96 mt-12 bg-indigo-100">
-      <div className="AboutUsContainer flex justify-center items-center">
-        {/* Left side with image */}
-        <div className="AboutUsImage">
-          <img
-            src={PharmacistImage}
-            alt="Pharmacist Serving Customer"
-            width={"315px"}
-            height={"100%"}
-            style={{ marginRight: "15rem" }}
-          />
-        </div>
+    <div className="AboutUs-Background w-97 h-96 m- mt-12 bg-indigo-100">
+      <div className="AboutUsContainer flex flex-col sm:flex-row justify-center items-center">
+        {/* Left side with image (Conditional rendering) */}
+        {!isMobile && (
+          <div className="AboutUsImage">
+            <img
+              src={PharmacistImage}
+              alt="Pharmacist Serving Customer"
+              width={"315px"}
+              height={"100%"}
+              style={{ marginRight: "15rem" }}
+            />
+          </div>
+        )}
 
         {/* Right side with content */}
-        <div className="AboutUsContent">
-          <div className="AboutUsTitle w-96 h-6 mb-9 text-blue-950 text-5xl font-semibold ">
+        <div className="AboutUsContent text-center" style={{ height: "300px" }}>
+          <div className="AboutUsTitle w-96 h-6 mb-9 mt-10 text-blue-950 text-5xl font-semibold ">
             About Us
           </div>
           <div className="AboutUsText w-96 h-36 text-gray-700 text-base font-normal leading-relaxed">

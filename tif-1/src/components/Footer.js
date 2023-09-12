@@ -10,17 +10,15 @@ import {
 function Footer() {
   return (
     <div
-      className="footer w-96 h-96 bg-stone-50"
+      className="footer  bg-stone-50"
       style={{
         width: "100%",
         height: "100%",
-        // border: "2px solid black",
-        marginTop: "6rem",
       }}
     >
       <div
         className="flex justify-evenly items-center"
-        style={{ margin: "5rem" }}
+        style={{ margin: "7rem" }}
       >
         {/* LHS */}
         <div className="logo-food-blogging">

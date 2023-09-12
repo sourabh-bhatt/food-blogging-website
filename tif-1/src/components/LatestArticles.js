@@ -57,12 +57,12 @@ function LatestArticles() {
         style={{
           width: "100%",
           height: "100%",
-          border: "2px solid black",
+
           marginTop: "6rem",
         }}
       >
         Latest Articles
-        <div className="containers flex align-center justify-center  border-2 border-green-500">
+        <div className="containers flex align-center justify-center ">
           {visibleImages.map((image, index) => (
             <div
               key={index}
@@ -76,17 +76,17 @@ function LatestArticles() {
               {/* Box Elements */}
               {/* Image */}
               <img
-                className="inage w-30 h-36 m-4 ml-4 rounded-3xl border-2 border-rose-500"
+                className="inage w-30 h-36 m-4 ml-4 rounded-3xl"
                 src={image}
                 alt={`Image ${index + 1}`}
                 style={{ width: "250px", height: "181px" }}
               />
               {/* Title */}
-              <div className="title m-5 border-2 border-rose-800 text-blue-950 text-xl font-bold">
+              <div className="title m-5  text-blue-950 text-xl font-bold">
                 {visibleTitles[index]}
               </div>
               {/* Text */}
-              <div className="text w-82 m-5 border-2 border-rose-500 text-gray-700 text-base font-normal">
+              <div className="text w-82 m-5  text-gray-700 text-base font-normal">
                 {visibleTexts[index]}
               </div>
               {/* Button */}
